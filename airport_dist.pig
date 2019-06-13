@@ -37,6 +37,6 @@ joined_airports = foreach all_names generate $0 as s_id , $3 as s_name, $8 as s_
 
 air_dist = foreach joined_airports generate s_id, s_name, d_id, d_name, (SQRT(( d_lat- s_lat) * (d_lat - s_lat) + (d_lon - s_lon) * (d_lon - s_lon)) * 111) as dist;
 
-res = store air_dist into '/user/assignment2/r1' using PigStorage('\t', '-schema');
+res = store air_dist into '/user/flight/r1' using PigStorage('\t', '-schema');
 
 dump res;
