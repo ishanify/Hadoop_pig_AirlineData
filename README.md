@@ -8,7 +8,7 @@ Output to include Airport source and destination information and distance betwee
 ### About the Dataset:
 - The datasets are available in https://openflights.org/data.html
 - Airports Database contains over 10,000 airports. 
-<img src="https://openflights.org/demo/openflights-apdb-2048.png" width=20 height=20>
+![](https://openflights.org/demo/openflights-apdb-2048.png){:height="50%" width="50%"}
 - Airlines Database contains 5888 airlines.
 - Route Database contains 67663 routes between 3321 airports on 548 airlines 
 ![](https://openflights.org/demo/openflights-routedb-2048.png)
