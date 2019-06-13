@@ -1,4 +1,4 @@
-# Pig Latin - ETL on Airlines industy data
+# ETL on Airlines industy data in Hadoop using pig script
 Learning to do ETL in Hadoop is complex and time consuming but not with Pig. Pig gives a SQL-Like languege to run MapReduce jobs that transform data for complex analysis. I have used Pig Latin to extract, Load and Transform data of airlines, airports and routes.
 
 ### Objective
