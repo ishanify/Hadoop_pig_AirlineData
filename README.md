@@ -14,8 +14,15 @@ Output to include Airport source and destination information and distance betwee
 <img src=https://openflights.org/demo/openflights-routedb-2048.png height=50% width=50%></img>
 
 ### Steps for solution
-- Loading the data of routes 
-- Filtering out the missing values in routes
-- Extracting the list of distinct routes using Source and Destination airport IDs
+1. Load the data of routes and perform these steps:
+  - Filtering out the missing values in routes
+  - Extracting the list of distinct routes with Source and Destination airport IDs into a relation
+  -
 
-- Loading the data of airports
+2. Load the data of airports
+3. Join the relations obtained from step 1 and 2 twice; once to get source airport information and then to get destination airport information
+4. Generate the columns as required from the above relation. I took Airport ID, name, latitude, longitude of both source and destination airports. 
+5. The tricky part is to calculate distance in KM using latitudes and longitudes. I did that using the simple Euclidian formula:
+```
+distance = SQRT((lat2 - lat1) * (lat2 - lat1) + (lon2 - lon1) * (lon2 - lon1)) * 111
+```
